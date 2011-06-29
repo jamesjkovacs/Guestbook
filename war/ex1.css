@@ -1,0 +1,27 @@
+body
+{
+background-color:yellow;
+/*background-image:url('hackanm.gif');*/
+}
+h1
+{
+font-size:32pt;
+}
+h2
+{
+color:blue;
+}
+p
+{
+margin-left:50px;
+}
+table, th, td
+{
+border: 3px solid black;
+padding:15px;
+}
+th
+{
+background-color:green;
+color:white;
+}

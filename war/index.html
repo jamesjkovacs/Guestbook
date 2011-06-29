@@ -10,21 +10,52 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Hello Red Engine</title>
+    <link rel="stylesheet" type="text/css" href="ex1.css" />
+    <script type="text/javascript" src="date.js"></script>
+    
   </head>
-
-  <body>
-    <h1>Hello Apple Engine!</h1>
-	
+ <h1>Hello Apple Engine!</h1>
+ <hr />
+ <p id="demo"></p>
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+	<p>
+	This is a paragraph with some text in it. This is a paragraph with some text in it. This is a paragraph with some text in it. This is a paragraph with some text in it.
+	</p>
+<p>
+A moving image:
+<img src="hackanm.gif" alt="Computer man" width="48" height="48" />
+</p>	
     <table>
+      <th>Available Servlets:</th>        
       <tr>
-        <td colspan="2" style="font-weight:bold;">Available Servlets:</td>        
-      </tr>
-      <tr>
-        <td><a href="guestbook">Guestbook</a></td>
+        <td><a href="guestbook" target="_blank">Guestbook</a></td>
       </tr>
       <tr>
         <td><a href="signout">SignOut</a></td>
       </tr>
+      <tr>
+        <td><a href="test.html">Test</a></td>
+      </tr>
     </table>
+	<button type="button" onclick="displayDate()">Display Date</button>
+	<script type="text/javascript">
+	//Write a "Good morning" greeting if
+	//the time is less than 10
+	
+	var d=new Date();
+	var time=d.getHours();
+	
+	if (time<10)
+	  {
+	  document.write("<b>Good morning</b>");
+	  }
+	else
+	  {
+		  document.write("<b>Good afternoon</b>");
+		  alert("I am an alert box!");
+	  }
+	
+	</script>
   </body>
 </html>
